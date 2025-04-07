@@ -471,7 +471,7 @@
             </label>
             <button type="submit" class="footer-btn" aria-label="Subscribe">
               Subscribe
-              <svg class="footer-btn-icon" width="24" height="20">
+              <svg class="footer-btn-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
@@ -489,27 +489,42 @@
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form>
           <div class="modal-input-container">
-            <label class="modal-label" for="name">Name</label>
+            <label class="modal-label" for="user-name">Name</label>
             <div class="modal-input-wrap">
-              <input class="modal-input" type="text" name="name" id="name" />
-              <svg class="modal-input-icon" width="18" height="18">
+              <input
+                class="modal-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
           </div>
           <div class="modal-input-container">
-            <label class="modal-label" for="phone">Phone</label>
+            <label class="modal-label" for="user-phone">Phone</label>
             <div class="modal-input-wrap">
-              <input class="modal-input" type="tel" name="phone" id="phone" />
+              <input
+                class="modal-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+              />
               <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
           <div class="modal-input-container">
-            <label class="modal-label" for="email">Email</label>
+            <label class="modal-label" for="user-email">Email</label>
             <div class="modal-input-wrap">
-              <input class="modal-input" type="email" name="email" id="email" />
+              <input
+                class="modal-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+              />
               <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
@@ -527,10 +542,12 @@
           <div class="modal-checkbox-container">
             <input
               type="checkbox"
-              id="checkbox"
+              id="user-privacy"
               class="modal-checkbox visually-hidden"
+              value="true"
+              name="user-privacy"
             />
-            <label for="checkbox" class="modal-checkbox-text"
+            <label for="user-privacy" class="modal-checkbox-text"
               ><span class="modal-checkbox-box"
                 ><svg class="privaci-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-privasy"></use></svg></span
