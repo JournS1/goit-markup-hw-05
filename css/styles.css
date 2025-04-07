@@ -499,6 +499,7 @@ img {
   border-radius: 4px;
   width: 264px;
   height: 40px;
+  padding: 8px 0 8px 16px;
 }
 
 .footer-btn {
@@ -539,14 +540,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* opacity: 0;
-  pointer-events: none; */
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
-  transition: opasity 250ms ease-in-out;
+  visibility: visible;
 }
 
 .modal {
