@@ -185,9 +185,7 @@ img {
 }
 
 .hero-btn:hover,
-.hero-btn:focus,
-.footer-btn:hover,
-.footer-btnfocus {
+.hero-btn:focus {
   background-color: #404bbf;
 }
 
@@ -531,7 +529,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #404bbf;
 }
 
 .footer-btn-icon {
@@ -639,7 +642,6 @@ img {
 }
 
 .modal-input {
-  margin-bottom: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
@@ -771,6 +773,11 @@ img {
   border: none;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #404bbf;
 }
 
 .modal-btn:focus {
